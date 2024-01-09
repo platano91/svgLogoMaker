@@ -91,3 +91,8 @@ function createSVG(options) {
         console.error('Error creating SVG:', error.message);
     }
 }
+
+// Execute the user prompt and handle the response
+promptUser()
+    .then(answers => createSVG(answers))
+    .catch(error => console.error('An error occurred:', error));
