@@ -70,3 +70,24 @@ function generateSvg(data) {
     // Return the complete SVG string
     return svgString;
 }
+
+// Function to create an SVG file based on user input
+function createSVG(options) {
+    try {
+        // Generate the SVG content
+        const svgContent = generateSvg(options);
+
+        // Write the SVG content to a file
+        fs.writeFile('./examples/logo.svg', svgContent, 'utf8', err => {
+            if (err) {
+                // Handle errors in file writing
+                console.error('Error creating SVG file:', err);
+                return;
+            }
+            console.log('Generated logo.svg');
+        });
+    } catch (error) {
+        // Handle errors in SVG generation
+        console.error('Error creating SVG:', error.message);
+    }
+}
