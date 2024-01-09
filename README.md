@@ -14,7 +14,7 @@ A Node.js command-line application that takes in user input to generate a logo a
 - [Questions](#questions)
 
 ## Installation
-You will need node and to install the dependenant npms. In your terminal run npm i inquirer@8.2.4. Then run npm i fs. Lastly we will need to run npm install --save-dev jest
+You will need node and to install the dependenant npms. In your terminal run npm i inquirer@8.2.4. Then run npm i fs. Then run npm install --save-dev jest
 
 ## Usage
 The application will be invoked by using the following command:
@@ -22,7 +22,14 @@ The application will be invoked by using the following command:
 ```bash
 node index.js
 ```
-![Image showing a green circle with white text that reads "SVG.".](./Images/10-oop-homework-demo.png)
+![](./assets/svgterminal.png)
+
+![](./assets/svgstring.png)
+
+![](./assets/svglogo.png)
+
+
+[Video Link Demonstration](https://drive.google.com/file/d/1FKmfBCKOmfdx03EdSIfeW7HjqsMOv01v/view)
 
 ## License
 This project is licensed under the MIT License.
@@ -30,16 +37,10 @@ This project is licensed under the MIT License.
 ## Contributing
 
 ## Tests
-the following example test should pass:
-
-```js
-const shape = new Triangle();
-shape.setColor("blue");
-expect(shape.render()).toEqual('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
-```
+To run tests included. Have all necesarry npms installed. Run npm test in your console.
 
 ## Questions
 For questions, please contact 
 - GitHub: [platano91](https://github.com/platano91)
-- Email: [salvadomo@hotmail.com](mailto:salvadomo@hotmail.com)
+- Email: 
 
